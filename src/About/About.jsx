@@ -26,7 +26,7 @@ const About = () =>  {
             </svg>
           </div>
           {/* card start */}
-          <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-y-10 place-items-center mt-[4rem] md:w-[80%] w-full m-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-y-10 place-items-center mt-[4rem] md:w-[90%] w-full m-auto">
               {Info.map((member, index) => (
               <Func key={index} data={member} />
             ))}

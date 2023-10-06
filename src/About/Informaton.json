@@ -1,21 +1,21 @@
 [
     {
-      "image": "dist/assets./6.svg",
+      "image": "/assets./6.svg",
       "name": "Create an event",
       "role": "Create an event here."
     },
     {
-      "image": "./assets/10.svg",
+      "image": "src/assets/10.svg",
       "name": "Register for event",
       "role": "Reserve your ticket here."
     },
     {
-      "image": "../assets/4.svg",
+      "image": "src/assets/4.svg",
       "name": "Generate Dp",
       "role": "Create your event flyer."
     },
     {
-      "image": "assets/h.svg",
+      "image": "src/assets/h.svg",
       "name": "Rent an event hall",
       "role": "Book a hall for your event."
     },
