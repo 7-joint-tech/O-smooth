@@ -1,31 +1,31 @@
 [
     {
-      "image": "/assets/6.svg",
+      "image": "/6.svg",
       "name": "Create an event",
       "role": "Create an event here."
     },
     {
-      "image": "src/assets/10.svg",
+      "image": "/10.svg",
       "name": "Register for event",
       "role": "Reserve your ticket here."
     },
     {
-      "image": "src/assets/4.svg",
+      "image": "/4.svg",
       "name": "Generate Dp",
       "role": "Create your event flyer."
     },
     {
-      "image": "src/assets/h.svg",
+      "image": "/h.svg",
       "name": "Rent an event hall",
       "role": "Book a hall for your event."
     },
     {
-      "image": "src/assets/k.svg",
+      "image": "/k.svg",
       "name": "See all events",
       "role": "See the history of events."
     },
     {
-      "image": "src/assets/a.svg",
+      "image": "/a.svg",
       "name": "Rating and Feedbacks",
       "role": "Rate and Recommend us here."
     }
