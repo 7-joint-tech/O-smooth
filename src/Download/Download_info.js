@@ -10,7 +10,7 @@ export const SMOOTH = [
       isImgSecond: true,
     },
     {
-        id: 1,
+        id: 2,
         title1: "Leading Health care providers",
         description:
           "Have ever had to wait extra time when you pay the servicesHave ever had to wait extra time when you pay the servicesHave ever had to wait extra time when you pay the servicesHave ever had to wait extra time when you pay the services ",
