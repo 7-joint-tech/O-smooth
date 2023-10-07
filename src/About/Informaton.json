@@ -25,7 +25,7 @@
       "role": "See the history of events."
     },
     {
-      "image": "./a.svg",
+      "image": "/a.svg",
       "name": "Rating and Feedbacks",
       "role": "Rate and Recommend us here."
     }
