@@ -5,27 +5,27 @@
       "role": "Create an event here."
     },
     {
-      "image": "/10.svg",
+      "image": "./10.svg",
       "name": "Register for event",
       "role": "Reserve your ticket here."
     },
     {
-      "image": "/4.svg",
+      "image": "./4.svg",
       "name": "Generate Dp",
       "role": "Create your event flyer."
     },
     {
-      "image": "/h.svg",
+      "image": "./h.svg",
       "name": "Rent an event hall",
       "role": "Book a hall for your event."
     },
     {
-      "image": "/k.svg",
+      "image": "./k.svg",
       "name": "See all events",
       "role": "See the history of events."
     },
     {
-      "image": "/a.svg",
+      "image": "./a.svg",
       "name": "Rating and Feedbacks",
       "role": "Rate and Recommend us here."
     }
