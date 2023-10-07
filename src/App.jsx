@@ -3,6 +3,7 @@ import Navbar from './Navbar/Navbar';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Download from './Download/Download';
+import Carosel from './Carosel/Carosel';
 
 
 
@@ -15,6 +16,7 @@ return (
      <Hero />
      <About />
      <Download />
+     <Carosel />
     </div>
     
    
