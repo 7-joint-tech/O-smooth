@@ -1,5 +1,4 @@
 import React from 'react';
-import img1 from '../assets/i.svg'
 import Info from "./Download_function";
 import { SMOOTH } from "./Download_info";
 
