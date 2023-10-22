@@ -1,5 +1,6 @@
 import Img1 from "../assets/1.png";
 
+
 export const SMOOTH = [
     {
       id: 1,
