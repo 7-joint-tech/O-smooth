@@ -9,7 +9,7 @@ const About = () =>  {
           <div className="flex flex-col justiy-center items-center m-auto md:w-1/2">
             <h1 className="text-black font-bold text-2xl">OUR SERVICES</h1>
             <div className="w-[3rem] h-[2px] bg-black my-5"></div>
-            <p className="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            <p className="text-center">O-smooth is  platform that enable you locate your amazing =Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
                eos quae aspernatur ratione tempora
                facere vitae delectus deleniti, minus hic repellat mollitia fuga.</p>
           </div>

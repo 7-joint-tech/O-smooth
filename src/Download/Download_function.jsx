@@ -20,7 +20,7 @@ export default function Information({ data }) {
         <Button label="Read More"/> 
         </div>
       </div>
-      <img src={data.img} className="mx-auto w-full max-w-[400px] h-[20rem] object-fit-cover" alt={`Why-spaces-lounge IMG${data.id}`}/>
+      <img src={data.img} className="mx-auto w-full max-w-[400px] h-[20rem] object-fit-cover" alt={`O-smooth${data.id}`}/>
     </div>
   );
 }
