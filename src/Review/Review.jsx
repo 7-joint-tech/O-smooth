@@ -13,10 +13,12 @@ const SimpleCarousel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
   };
 
   return (
-    <section>
+    <section name='Review' id='Review'>
     <Slider {...settings} className='md:w-2/3 w-[90%] mx-auto  rounded-[0.7rem] bg-[#458FF6]'>
           {SMOOTH.map((data) => {
             return <Info data={data} key={data.id} />;

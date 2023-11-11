@@ -1,6 +1,12 @@
 import React from 'react'
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+ import { Link } from 'react-scroll';
+import logo from '../../public/Oslogo.png';
+import { Link as RouterLink } from 'react-router-dom';
+
+
+
 
 
 
@@ -22,24 +28,71 @@ const Navbar = () => {
   const navTogglingFunction = () => {
     navToggle == "false" ? openNavLink() : closeNavLink();
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector('nav');
+      const scrollY = window.scrollY;
+
+      if (scrollY >= 10) {
+        navbar.classList.add('nav_active');
+      } else {
+        navbar.classList.remove('nav_active');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
   
 
     return(
-        <nav className="flex justify-between w-full h-[4rem] items-center md:px-[7rem] px-4 bold" >
-              <h1 className='text-[blue] text-xl font-[700]'>O-SMOOTH</h1>
-            <ul data-nav-toggle={navToggle}>
-                <div className="flex flex-col md:flex-row">
-                  <li className='px-2'>Home</li>
-                  <li className='px-2'>Home</li>
-                  <li className='px-2'>Home</li>
-                  <li className='px-2'>Home</li>
-                  <li className='px-2'>Home</li>
-                </div>
-            </ul>
-    <div className="block md:hidden text-2xl" onClick={navTogglingFunction}>
-      {navIcons}
-    </div>
-        </nav>
-    )
-}
+      <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 md:px-16 px-2">
+     <a href="#" className="flex justify-center items-center gap-x-2">
+       <img className="w-full object-cover h-[10rem] sm:w-[50px]" src={logo} alt="logo" /><h1 className="font-[600] font-poppins text-[blue] text-[24px] line-[36px] hidden md:block">O-Smooth</h1>
+     </a>
+
+       {/* Nav as */}
+       <ul className="animation" data-nav-toggle={navToggle}>
+         <div className="flex flex-col md:flex-row">
+       <a className="py-2 px-5  bg-home_button font-[600] w-[100px]font-[600] h-[40px] text-center rounded-[5px] text-gray"
+           >
+           <Link to="Header" smooth={true} duration={500} onClick={closeNavLink}>Home</Link>
+       </a> 
+       <a className="py-2 px-5  rounded-[7px] font-[600] text-[blue] text-center nav-link"
+          href='#programmes'>
+            <Link to="Latest" smooth={true} duration={500} onClick={closeNavLink}>Events</Link>
+         
+       </a>
+       <a className="py-2 px-5 rounded-lg my-2 md:my-0 font-[600] text-[blue] md:mr-4 mb-2 md:mb-0 text-center nav-link"
+            href='#team'>
+             <Link to="Us" smooth={true} duration={500 }onClick={closeNavLink}>About</Link>
+       </a>  
+       <a className="py-2 px-5  rounded-[7px]  font-[600] text-[blue] text-center nav-link"
+         href="#contact" >
+         <Link to="About" smooth={true} duration={500} onClick={closeNavLink}>Services</Link>
+       </a>
+       <a className="py-2 px-5  rounded-[7px]  font-[600] text-[blue] text-center nav-link"
+         href="#contact" >
+         <Link to="Review" smooth={true} duration={500} onClick={closeNavLink}>FeedBacks</Link>
+       </a>
+       <RouterLink
+          to={`/faq`}
+          className='py-2 px-5  rounded-[7px]  font-[600] text-[blue] text-center nav-link'>
+          FAQ
+        </RouterLink>
+         </div>  
+     </ul>
+     
+     {/* icons for toggling */}
+     <div className="block md:hidden text-2xl" onClick={navTogglingFunction}>
+     {navIcons}
+     </div>
+   </nav>
+ );
+ };
+
+
 export default Navbar;
+

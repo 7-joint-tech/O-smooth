@@ -1,27 +1,128 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Navbar from './Navbar/Navbar';
 import Hero from './Hero/Hero';
+import Us from './Us/Us';
 import About from './About/About';
 import Download from './Download/Download';
 import Review from './Review/Review';
+import Latest from  './Latest/Latest';
+import { Element } from 'react-scroll';
+import FAQ from './FAQ/FAQ';
+import Footer from './Footer/Footer';
 
 
+// Initialize AOS
+AOS.init();
 
 const App = () => {
-return (
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <div className="mx-1 md:mx-0 " >
+            <Navbar />
+            <Element name="Header">
+              <Hero />
+            </Element>
+            <Element name="Us">
+              <Us />
+            </Element>
+            <Element name='About'>
+              <About />
+            </Element>
+            <Element name='Download'>
+              <Download />
+            </Element>
+            <Element name='Review'>
+              <Review />
+            </Element>
+            <Element name='Latest'>
+              <Latest />
+            </Element>
+            <Element name='Footer'>
+              <Footer />
+            </Element>
+          </div>
+        } />
+        <Route path="/faq" element={<FAQ />} />
+      </Routes>
+    </Router>
+  );
+};
 
-    <div className="mx-1 md:mx-0">
-     <Navbar />
-     <Hero />
-     <About />
-     <Download />
-     <Review />
-    </div>
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import Navbar from './Navbar/Navbar';
+// import Hero from './Hero/Hero';
+// import About from './About/About';
+// import Download from './Download/Download';
+// import Review from './Review/Review';
+// import Latest from  './Latest/Latest';
+// import { Element } from 'react-scroll';
+// import FAQ from './FAQ/FAQ';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
+// import { Routes, Route } from "react-router-dom";
+
+
+
+// const App = () => {
+// return (
+//   <Routes>
+//     <div className="mx-1 md:mx-0">
+//       <Navbar />
+//       <Element name="Header">
+//       <Hero />
+//       </Element>
+//       <Element name='About'>
+//       <About />
+//       </Element>
+//       <Element name='Download'>
+//       <Download />
+//       </Element>
+//       <Element name='Review'>
+//       <Review />
+//       </Element>
+//       <Element name='Latest'>
+//       <Latest />
+//       </Element>
+     
+//       <Route path="/faq" element={<FAQ />}></Route>
+     
+//     </div>
+//     </Routes>
     
    
-)
-}
-export default App;
+// )
+// }
+// export default App;
 
 
 
