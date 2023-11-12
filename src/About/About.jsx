@@ -2,16 +2,25 @@ import React  from "react";
 import Info from "./Informaton.json";
 import Func from "./func";
 import Button from "../Button";
+
+
 const About = () =>  {
+
+
     return(
-      <section>
+      <section name='About' id="About">
         <div className="text-[black] w-full px-4">
           <div className="flex flex-col justiy-center items-center m-auto md:w-1/2">
-            <h1 className="text-black font-bold text-2xl">OUR SERVICES</h1>
+          <h1
+      className="text-center text-3xl md:text-[6vw] lg:text-5xl font-bold mb-12 text-gradient"
+      data-aos="fade-down"
+      data-aos-duration="3000"
+    >
+      Our Services
+    </h1>
             <div className="w-[3rem] h-[2px] bg-black my-5"></div>
-            <p className="text-center">O-smooth is  platform that enable you locate your amazing =Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
-               eos quae aspernatur ratione tempora
-               facere vitae delectus deleniti, minus hic repellat mollitia fuga.</p>
+            <p className="text-center">Elevate your event experience with O-Smooth's comprehensive services.
+        From event creation to social media engagement, we've got you covered.</p>
           </div>
           {/* backgroung svg */}
           <div className="md:block hidden left-0 absolute md:w-[58.62194rem] md:h-[41.9595rem]">
@@ -26,7 +35,7 @@ const About = () =>  {
             </svg>
           </div>
           {/* card start */}
-          <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-y-10 place-items-center mt-[4rem] md:w-[90%] w-full m-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 grid-flow-row gap-y-10 place-items-center mt-[4rem] md:w-[90%] w-full m-auto" >
               {Info.map((member, index) => (
               <Func key={index} data={member} />
             ))}

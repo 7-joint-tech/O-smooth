@@ -16,7 +16,7 @@ export const SMOOTH = [
         title1: "What our customers are Saying",
         description:
           "Have ever had to wait extra time when you pay the servicesHave ever had to wait extra time when you pay the servicesHave ever had to wait extra time when you pay the services ",
-        img: Img1,
+        img: Img2,
         title2: "- Codeknight Dojo",
         isImgSecond: false,
       },
@@ -25,7 +25,7 @@ export const SMOOTH = [
         title1: "What our customers are Saying",
         description:
           "Have ever had to wait extra time when you pay the servicesHave ever had to wait extra time when you pay the servicesHave ever had to wait extra time when you pay the services ",
-        img: Img1,
+        img: Img2,
         title2: "- Codeknight Dojo",
         isImgSecond: false,
       },
@@ -34,7 +34,7 @@ export const SMOOTH = [
         title1: "What our customers are Saying",
         description:
           "Have ever had to wait extra time when you pay the servicesHave ever had to wait extra time when you pay the servicesHave ever had to wait extra time when you pay the services ",
-        img: Img1,
+        img: Img2,
         title2: "- Codeknight Dojo",
         isImgSecond: false,
       }
