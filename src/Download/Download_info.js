@@ -1,4 +1,5 @@
-import Img1 from "../assets/1.png";
+import Img1 from "../../public/frie.svg";
+import Img2 from "../../public/remind.svg";
 
 
 export const SMOOTH = [
@@ -15,7 +16,7 @@ export const SMOOTH = [
     title: "Social Media Reminders",
     description:
       "Boost event visibility with O-Smooth's social media integration. Effortlessly post event reminders on various platforms, ensuring maximum attendance and engagement.",
-    img: Img1,
+    img: Img2,
     isImgSecond: false,
   },
 ]
