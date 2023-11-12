@@ -1,22 +1,24 @@
 import React from 'react';
 import TeamCard from "./Style";
-import { SMOOTH } from "./Info.js";
-import Button from '../Button';
+import { SMOOTH } from "./Info";
+// import Button from '../Button';
+import Info from "./Style";
 const Latest = () => {
     return(
-    <div className="container mx-auto mt-[5%] h-full w-full px-4" id='Latest' name='Latest'> 
-      <div className="flex flex-col justiy-center items-center md:w-1/2 m-auto">
-               <p className="text-[3em] font-bold text_gradient  text-primary z-[1] text-center">Check out your latest Events</p>
-          </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-20 md:gap-y-40 place-items-center mt-[4rem] w-full">
-        {SMOOTH.map((member, index) => (
-          <TeamCard key={index} data={member} />
-        ))}
-          <div className="">
-          <Button label="View All"/> 
-          </div>
+      <section className="py-6 sm:py-12 bg-gray-100 text-gray-800 mt-12">
+      <div className="container p-6 mx-auto space-y-8">
+        <div className="space-y-2 text-center">
+          <h2 className="text-3xl font-bold">Uncoming Events</h2>
+          <p className="font-serif text-lgg dark:text-gray-900">Checkout Our Latest Events.</p>
+        </div>
+        <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4 w-full justify-center items-center">
+  {SMOOTH.map((data) => {
+    return <Info data={data} key={data.id} />;
+  })}
+</div>
+
       </div>
-    </div>
+    </section>
     )
 }
 export default Latest;

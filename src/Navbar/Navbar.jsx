@@ -48,9 +48,9 @@ const Navbar = () => {
   
 
     return(
-      <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 md:px-16 px-2">
+      <nav className="w-full h-[80px] flex justify-between items-center fixed top-0 left-0 z-50 md:px-16 px-4">
      <a href="#" className="flex justify-center items-center gap-x-2">
-       <img className="w-full object-cover h-[10rem] sm:w-[50px]" src={logo} alt="logo" /><h1 className="font-[600] font-poppins text-[blue] text-[24px] line-[36px] hidden md:block">O-Smooth</h1>
+       <img className="w-[8rem] object-cover h-[8rem]" src={logo} alt="logo" /><h1 className="font-[600] font-poppins text-violet-400 text-[24px] line-[36px] hidden md:block">O-Smooth</h1>
      </a>
 
        {/* Nav as */}
@@ -60,26 +60,26 @@ const Navbar = () => {
            >
            <Link to="Header" smooth={true} duration={500} onClick={closeNavLink}>Home</Link>
        </a> 
-       <a className="py-2 px-5  rounded-[7px] font-[600] text-[blue] text-center nav-link"
+       <a className="py-2 px-5  rounded-[7px] font-[600] text-violet-400 text-center nav-link"
           href='#programmes'>
             <Link to="Latest" smooth={true} duration={500} onClick={closeNavLink}>Events</Link>
          
        </a>
-       <a className="py-2 px-5 rounded-lg my-2 md:my-0 font-[600] text-[blue] md:mr-4 mb-2 md:mb-0 text-center nav-link"
+       <a className="py-2 px-5 rounded-lg my-2 md:my-0 font-[600] text-violet-400 md:mr-4 mb-2 md:mb-0 text-center nav-link"
             href='#team'>
              <Link to="Us" smooth={true} duration={500 }onClick={closeNavLink}>About</Link>
        </a>  
-       <a className="py-2 px-5  rounded-[7px]  font-[600] text-[blue] text-center nav-link"
+       <a className="py-2 px-5  rounded-[7px]  font-[600] text-violet-400 text-center nav-link"
          href="#contact" >
          <Link to="About" smooth={true} duration={500} onClick={closeNavLink}>Services</Link>
        </a>
-       <a className="py-2 px-5  rounded-[7px]  font-[600] text-[blue] text-center nav-link"
+       <a className="py-2 px-5  rounded-[7px]  font-[600] text-violet-400 text-center nav-link"
          href="#contact" >
          <Link to="Review" smooth={true} duration={500} onClick={closeNavLink}>FeedBacks</Link>
        </a>
        <RouterLink
           to={`/faq`}
-          className='py-2 px-5  rounded-[7px]  font-[600] text-[blue] text-center nav-link'>
+          className='py-2 px-5  rounded-[7px]  font-[600] text-violet-400 text-center nav-link'>
           FAQ
         </RouterLink>
          </div>  

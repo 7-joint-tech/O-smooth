@@ -6,11 +6,12 @@ const Us = () => {
   return (
     <div className="w-full max-w-[1536px] py-24 px-4 lg:px-20 xl:px-56" name='Us' id="Us">
       <h1
-        data-aos="flip-up"
-        data-aos-once="false"
-        className="text-center text-3xl md:text-[6vw] lg:text-5xl font-bold mb-12">
-        What is O-Smooth
-      </h1>
+      className="text-center text-3xl md:text-[6vw] lg:text-5xl font-bold mb-12 text-gradient"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
+      What is O-Smooth
+    </h1>
       <div className="flex flex-wrap justify-center items-start gap-6">
         {Usinfo.map((information) => {
           return (

@@ -7,7 +7,7 @@ export default function Information({ data }) {
       className={`flex flex-wrap items-start gap-8 ${
         data.isImgSecond == false && "flex-row-reverse"
       }`}>
-      <div className="flex flex-col lg:basis-[50%] gap-2">
+      <div className="flex flex-col lg:basis-[50%] gap-2" >
         <h2 className="text-3xl lg:text-4xl text_gradient font-bold">
           {data.title1}
         </h2>
@@ -20,7 +20,9 @@ export default function Information({ data }) {
         <Button label="Read More"/> 
         </div>
       </div>
-      <img src={data.img} className="mx-auto w-full max-w-[400px] h-[20rem] object-fit-cover" alt={`O-smooth${data.id}`}/>
+      <img src={data.img} className="mx-auto w-full max-w-[400px] h-[20rem] object-fit-cover" alt={`O-smooth${data.id}`} data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"/>
     </div>
   );
 }

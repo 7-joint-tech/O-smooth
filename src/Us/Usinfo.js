@@ -2,16 +2,16 @@ export const Usinfo = [
     {
       id: 1,
       detail:
-        "AsaKatsu is a Japanese term for waking up a little early to do something productive, in line with a goal. For example; read 4 books per month, do 100 days challenge, etc.",
+        "O-Smooth is a comprehensive platform designed to manage tech events. It facilitates the posting of the latest events, provides information about upcoming events, and includes features such as reminders to enhance your event experience.",
     },
     {
       id: 2,
       detail:
-        "In this website, everyone who will commit will have to do a thing or two every morning and log the progress here.",
+        "O-Smooth is accessible through its website and mobile applications, ensuring you can stay connected to the latest tech events on the go.",
     },
     {
       id: 3,
       detail:
-        "We have to write our goals in order to reach them one by one, Why not using the website?",
+     " O-Smooth provides personalized event recommendations based on your interests and previous event attendance.",
     },
   ];
